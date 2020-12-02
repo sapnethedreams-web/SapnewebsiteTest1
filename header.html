@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+   body{
+        font-family: 'Open Sans', sans-serif;
+    }
+    .navigation {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    width: 100%;
+    background-color:#e67e22;
+  }
+
+  .my-nav {
+    position: sticky;
+    z-index: 999;
+    background: none;
+    border: none;
+    width: 100%;
+  }
+
+  .navigation:hover {
+    transition: 0.4s;
+  }
+
+  .nav-link {
+    padding: 0px;
+  }
+
+  .dropdown {
+    color: #737373;
+  }
+
+  .dropdown-menu {
+    border: none;
+    box-shadow: 0px -1px 6px 1px #cbb8
+  }
+
+  @media all and (min-width: 992px) {
+    .navbar li.nav-item .dropdown-menu {
+      display: none;
+    }
+
+    .navbar li.nav-item:hover .nav-link {
+      color: #e67e22;
+      transition: 0.5s;
+      background-color: white;
+    }
+
+    .navbar li.nav-item:hover .dropdown-menu {
+      display: block;
+    }
+
+    .navbar li.nav-item .dropdown-menu {
+      margin-top: 0;
+    }
+  }
+
+  /*Logo Styling*/
+
+  .logo {
+    width: 25%;
+    padding: 10px 0px 17px 23px;
+  }
+
+  .logo img {
+    height: 71px;
+    width: 101px;
+    color: white;
+  }
+
+  /*End of Logo Styling*/
+
+  .text-formatting {
+    font-family: 'Playfair Display', serif;
+    color: #e67e22;
+  }
+
+  a {
+    font-size: medium;
+    text-decoration: none;
+    font-weight: bold;
+    color: #737373;
+  }
+
+  a:hover {
+    color: #e67e22;
+
+    transition: 0.5s;
+  }
+
+  li a.nav:hover {
+    color: #e67e22;
+  }
+
+</style>
+<body>
+    
+</body>
+ <!--NAVBAR-->
+ <section id="navBar">
+    <nav class="navbar sticky-top navbar-light py-3 navbar-expand-lg navigation">
+      <div class="logo">
+        <img src="http://www.sapne.org.in/img/logo.gif" alt="no img">
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks">
+        <div class="navbar-toggler-icon"></div>
+      </button>
+      <div id="navbarLinks" class="collapse navbar-collapse menu-list v-class-resp">
+        <!--NavBar Set-->
+        <ul class="navbar-nav text-formatting">
+          <!--HOME-->
+          <li class="nav-item active px-2 ">
+            <a href="index.php" class="nav-item"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <!--END OF HOME-->
+
+          <!--ABOUT US-->
+          <li class="nav-item dropdown px-2 ">
+            <a class="nav-link dropdown-toggle  nav" href="#" id="navbarDropdownMenuLink1" role="button"
+              data-toggle="dropdown" aria-expanded="false"><i class="fa fa-info-circle" aria-hidden="true"></i> About US
+            </a>
+            <ul class="dropdown-menu dropdown-content">
+              <li><a class="dropdown-item text-formatting" href="index.php/#whoweare">Who We Are</a></li>
+              <li><a class="dropdown-item text-formatting" href="index.php/#vision">Vision</a></li>
+              <li><a class="dropdown-item text-formatting" href="index.php/#mission">Mission</a></li>
+            </ul>
+          </li>
+          <!--END OF ABOUT US-->
+
+          <!--OUR IMPACT-->
+          <li class="nav-item dropdown px-2">
+            <a class="nav-link dropdown-toggle  nav" href="#" id="navbarDropdownMenuLink2" role="button"
+              data-toggle="dropdown" aria-expanded="false"> <i class="fas fa-heart"></i> Our Impact
+            </a>
+            <ul class="dropdown-menu dropdown-content">
+              <li><a class="dropdown-item text-formatting" href="#">Child Education</a></li>
+              <li><a class="dropdown-item text-formatting" href="#">Environment</a></li>
+              <li><a class="dropdown-item text-formatting" href="#">health</a></li>
+              <li><a class="dropdown-item text-formatting" href="#">Sanitation</a></li>
+              <li><a class="dropdown-item text-formatting" href="#">Livelihood</a></li>
+              <li><a class="dropdown-item text-formatting" href="#">Divyang</a></li>
+              <li><a class="dropdown-item text-formatting" href="#">Employment</a></li>
+            </ul>
+          </li>
+          <!--END OF OUR IMPACT-->
+
+          <!--PROJECTS-->
+          <li class="nav-item dropdown px-2">
+            <a class="nav-link dropdown-toggle  nav" href="#" id="navbarDropdownMenuLink3" role="button"
+              data-toggle="dropdown" aria-expanded="false"><i class="fas fa-tasks"></i> Projects
+            </a>
+            <ul class="dropdown-menu dropdown-content">
+              <li><a class="dropdown-item text-formatting" href="#">Sapne Ki Pathshaala</a></li>
+              <li><a class="dropdown-item text-formatting" href="#">Shakti</a></li>
+              <li><a class="dropdown-item text-formatting" href="#">Draw your Dream</a></li>
+            </ul>
+          </li>
+          <!--END OF PROJECTS-->
+
+          <!--PHONEBOOK-->
+          <li class="nav-item dropdown px-2">
+            <a class="nav-link dropdown-toggle  nav" href="#" id="navbarDropdownMenuLink4" role="button"
+              data-toggle="dropdown" aria-expanded="false"><i class="fa fa-phone" aria-hidden="true"></i> Phonebook
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="dropdown-item text-formatting">Helpline Numbers</a></li>
+              <li><a href="#" class="dropdown-item text-formatting">Hospitals</a></li>
+              <li><a href="#" class="dropdown-item text-formatting">Schools</a></li>
+              <li><a href="#" class="dropdown-item text-formatting">Colleges</a></li>
+              <li><a href="#" class="dropdown-item text-formatting">Police Stations</a></li>
+
+            </ul>
+          </li>
+          <!--END OF PHONEBOOK-->
+
+          <!--BLESSINGS BY VIP-->
+          <li class="nav-item px-2">
+            <a href="#"><i class="far fa-handshake"></i> Blessings by VIP</a>
+          </li>
+          <!--END OF BLESSINGS BY VIP-->
+
+          <!--JOIN US-->
+          <li class="nav-item px-2">
+            <a href="#"><i class="fas fa-users"></i> Join Us</a>
+          </li>
+          <!--END OF JOIN US-->
+
+          <!--SAPNE STORE-->
+          <li class="nav-item px-2">
+            <a href="#" class="text-capitalize"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Sapne Store</a>
+          </li>
+          <!--END OF SAPNE STORE-->
+      </div>
+      </ul>
+    </nav>
+  </section>
+  <!--END OF NAVBAR-->
+</html>

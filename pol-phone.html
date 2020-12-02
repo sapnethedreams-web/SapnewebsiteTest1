@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Schools Table</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+
+   <!--Bootstrap 5 CDN-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous">
+
+</head>
+<style>
+  .table-title {
+    color: #e67e22;
+    font-size: 58px;
+    font-size: 42px;
+    font-weight: bold;
+
+  }
+
+  .table thead th {
+    color: #e67e22;
+
+  }
+
+  .table-hover tbody tr:hover td,
+  .table-hover tbody tr:hover th {
+    background-color: #f6c79e;
+    transition: 0.5s;
+  }
+
+  .tableFixHead {
+    overflow-y: auto;
+    height: 54rem;
+  }
+
+  .tableFixHead thead th {
+    position: sticky;
+    top: 0;
+  }
+
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th,
+  td {
+    padding: 8px 16px;
+  }
+
+  th {
+    background: #eee;
+  }
+</style>
+
+<body>
+  <div class="container my-2 pt-4 pb-4 ">
+    <h1 class="text-center table-title text-uppercase">police stations in delhi</h1>
+    <div class="tableFixHead my-3">
+      <table class="table table-hover table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Sno</th>
+            <th scope="col">Name</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Locality</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>POLICE STATION DEFENCE COLONY</td>
+                <td>011 2625 3402</td>
+                <td>DEFENCE COLONY</td>
+            </tr>
+
+          <tr>
+            <th scope="row">2</th>
+            <td>POLICE STATION PANDAV NAGAR</td>
+            <td>011 2278 0100</td>
+            <td>PANDAV NAGAR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">3</th>
+            <td>POLICE STATION RAJINDER NAGAR</td>
+            <td>011 2874 4012</td>
+            <td>RAJINDER NAGAR</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">4</th>
+            <td>POLICE STATION ROHINI NORTH</td>
+            <td>011 2704 8210</td>
+            <td>ROHINI NORTH</td>
+          </tr>
+
+          <tr>
+            <th scope="row">5</th>
+            <td>POLICE STATION CONNAUGHT PLACE</td>
+            <td>011 2374 7100</td>
+            <td>CONNAUGHT PLACE</td>
+          </tr>
+
+          <tr>
+            <th scope="row">6</th>
+            <td>POLICE STATION BARAKHAMBA ROAD</td>
+            <td>011 2341 3800</td>
+            <td>BARAKHAMBA ROAD</td>
+          </tr>
+
+          <tr>
+            <th scope="row">7</th>
+            <td>POLICE STATION MALVIYA NAGAR</td>
+            <td>011 2669 1861</td>
+            <td>MALVIYA NAGAR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">8</th>
+            <td>POLICE STATION ROOPNAGAR</td>
+            <td>011 2384 4632</td>
+            <td>ROOPNAGAR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">9</th>
+            <td>POLICE STATION MOTI NAGAR</td>
+            <td>011 2593 8880</td>
+            <td>MOTI NAGAR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">10</th>
+            <td>POLICE STATION HAUZ QAZI</td>
+            <td>011 2321 0414</td>
+            <td>HAUZ QAZI</td>
+          </tr>
+
+          <tr>
+            <th scope="row">11</th>
+            <td>POLICE STATION DWARKA SOUTH</td>
+            <td> 011 2508 9326</td>
+            <td>DWARKA SOUTH</td>
+          </tr>
+
+          <tr>
+            <th scope="row">12</th>
+            <td>POLICE STATION JANAKPURI</td>
+            <td>011 2555 3166</td>
+            <td>JANAKPURI</td>
+          </tr>
+
+          <tr>
+            <th scope="row">13</th>
+            <td>POLICE STATION HARI NAGAR</td>
+            <td>011 2852 5719</td>
+            <td>HARI NAGAR</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">14</th>
+            <td>POLICE STATION K. N. KATJU MARG</td>
+            <td>011 2757 1171</td>
+            <td>K. N. KATJU MARG</td>
+          </tr>
+
+          <tr>
+            <th scope="row">15</th>
+            <td>POLICE STATION VASANT KUNJ NORTH</td>
+            <td>011 2689 2530</td>
+            <td>VASANT KUNJ NORTH</td>
+          </tr>
+
+          <tr>
+            <th scope="row">16</th>
+            <td>POLICE STATION DWARKA SECTOR 23</td>
+            <td>011 2805 1585</td>
+            <td>DWARKA SECTOR 23</td>
+          </tr>
+
+          <tr>
+            <th scope="row">17</th>
+            <td>POLICE STATION SANSAD MARG</td>
+            <td>011 2336 1100</td>
+            <td>SANSAD MARG</td>
+          </tr>
+
+          <tr>
+            <th scope="row">18</th>
+            <td>POLICE STATION IP ESTATE</td>
+            <td> - </td>
+            <td>IP ESTATE</td>
+          </tr>
+
+          <tr>
+            <th scope="row">19</th>
+            <td>POLICE STATION KOTLA MUBARAKPUR</td>
+            <td>011 2462 4825</td>
+            <td>KOTLA MUBARAKPUR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">20</th>
+            <td>POLICE STATION KAMLA MARKET</td>
+            <td>011 2323 0623</td>
+            <td>KAMLA MARKET</td>
+          </tr>
+
+          <tr>
+            <th scope="row">21</th>
+            <td>POLICE STATION JAMA MASJID</td>
+            <td>088007 15137</td>
+            <td>JAMA MASJID</td>
+          </tr>
+
+          <tr>
+            <th scope="row">22</th>
+            <td>POLICE STATION MEHRAULI</td>
+            <td>011 2664 5050</td>
+            <td>MEHRAULI</td>
+          </tr>
+
+          <tr>
+            <th scope="row">23</th>
+            <td>POLICE STATION ADARSH NAGAR</td>
+            <td>011 2767 4452</td>
+            <td>ADARSH NAGAR</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">24</th>
+            <td>POLICE STATION NEW USMANPUR/ SHASTRI PARK</td>
+            <td>011 2217 2410</td>
+            <td>NEW USMANPUR, SHASTRI PARK</td>
+          </tr>
+
+          <tr>
+            <th scope="row">25</th>
+            <td>POLICE STATION VASANT VIHAR</td>
+            <td>011 2615 2577</td>
+            <td>VASANT VIHAR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">26</th>
+            <td>POLICE STATION BAWANA</td>
+            <td>011 2775 2534</td>
+            <td>BAWANA</td>
+          </tr>
+
+          <tr>
+            <th scope="row">27</th>
+            <td>POLICE STATION DELHI CANTONMENT</td>
+            <td>011 2569 4444</td>
+            <td>DELHI CANTONMENT</td>
+          </tr>
+
+          <tr>
+            <th scope="row">28</th>
+            <td>POLICE STATION SAROJINI NAGAR</td>
+            <td>011 2467 1281</td>
+            <td>SAROJINI NAGAR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">29</th>
+            <td>POLICE STATION BINDAPUR</td>
+            <td>011 2563 3525</td>
+            <td>BINDAPUR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">30</th>
+            <td>POLICE STATION KRISHNA NAGAR</td>
+            <td>011 2209 2887</td>
+            <td>KRISHNA NAGAR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">31</th>
+            <td>POLICE STATION SAKET</td>
+            <td>011 2956 1300</td>
+            <td> - </td>
+          </tr>
+
+          <tr>
+            <th scope="row">32</th>
+            <td>POLICE STATION UTTAM NAGAR EAST</td>
+            <td>011 2537 7425</td>
+            <td>UTTAM NAGAR EAST</td>
+          </tr>
+
+          <tr>
+            <th scope="row">33</th>
+            <td>POLICE STATION RAJOURI GARDEN</td>
+            <td>011 2545 3990</td>
+            <td>RAJOURI GARDEN</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">34</th>
+            <td>POLICE STATION KAROL BAUG</td>
+            <td>011 2872 0482</td>
+            <td>KAROL BAUG</td>
+          </tr>
+
+          <tr>
+            <th scope="row">35</th>
+            <td>POLICE STATION SEELAMPUR</td>
+            <td>011 2256 2989</td>
+            <td>SEELAMPUR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">36</th>
+            <td>POLICE STATION KOTWALI</td>
+            <td>011 2395 3442</td>
+            <td>KOTWALI</td>
+          </tr>
+
+          <tr>
+            <th scope="row">37</th>
+            <td>POLICE STATION ANAND VIHAR</td>
+            <td>011 2238 4200</td>
+            <td>ANAND VIHAR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">38</th>
+            <td>POLICE STATION GOVINDPURI</td>
+            <td>011 2998 0049</td>
+            <td>GOVINDPURI</td>
+          </tr>
+
+          <tr>
+            <th scope="row">39</th>
+            <td>POLICE STATION MADHU VIHAR & MANDAWALI</td>
+            <td>011 2272 0809</td>
+            <td>MADHU VIHAR & MANDAWALI</td>
+          </tr>
+
+          <tr>
+            <th scope="row">40</th>
+            <td>POLICE STATION SHAHDARA</td>
+            <td>011 2283 2087</td>
+            <td>SHAHDARA</td>
+          </tr>
+
+          <tr>
+            <th scope="row">41</th>
+            <td>POLICE STATION TILAK NAGAR</td>
+            <td>011 2540 7800</td>
+            <td>TILAK NAGAR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">42</th>
+            <td>POLICE STATION PATEL NAGAR</td>
+            <td>011 2587 4034</td>
+            <td>PATEL NAGAR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">43</th>
+            <td>POLICE POST</td>
+            <td>011 2627 1374</td>
+            <td> - </td>
+          </tr>
+          
+          <tr>
+            <th scope="row">44</th>
+            <td>POLICE STATION AMAR COLONY</td>
+            <td>011 2641 2194</td>
+            <td>AMAR COLONY</td>
+          </tr>
+
+          <tr>
+            <th scope="row">45</th>
+            <td>POLICE STATION VIKASPURI</td>
+            <td>011 2555 1213</td>
+            <td>VIKASPURI</td>
+          </tr>
+
+          <tr>
+            <th scope="row">46</th>
+            <td>POLICE STATION INDIRA GANDHI INTERNATIONAL AIRPORT</td>
+            <td>011 2565 2325</td>
+            <td>INDIRA GANDHI INTERNATIONAL AIRPORT</td>
+          </tr>
+
+          <tr>
+            <th scope="row">47</th>
+            <td>POLICE STATION ROHINI SOUTH</td>
+            <td>011 2751 0515</td>
+            <td>ROHINI SOUTH</td>
+          </tr>
+
+          <tr>
+            <th scope="row">48</th>
+            <td>POLICE STATION PAHARGANJ</td>
+            <td>011 2352 4746</td>
+            <td>PAHARGANJ</td>
+          </tr>
+
+          <tr>
+            <th scope="row">49</th>
+            <td>POLICE STATION SULTAN PURI</td>
+            <td>011 2547 2166</td>
+            <td>SULTAN PURI</td>
+          </tr>
+
+          <tr>
+            <th scope="row">50</th>
+            <td>POLICE STATION GANDHI NAGAR</td>
+            <td>011 2207 2761</td>
+            <td>GANDHI NAGAR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">51</th>
+            <td>POLICE STATION RANJIT NAGAR</td>
+            <td>011 2570 4008</td>
+            <td>RANJIT NAGAR</td>
+          </tr>
+
+
+          <tr>
+            <th scope="row">52</th>
+            <td>POLICE STATION GEETA COLONY</td>
+            <td>8750870626</td>
+            <td>GEETA COLONY</td>
+          </tr>
+
+          <tr>
+            <th scope="row">53</th>
+            <td>POLICE STATION BURARI</td>
+            <td>011 2761 6845</td>
+            <td> - </td>
+          </tr>
+          
+          <tr>
+            <th scope="row">54</th>
+            <td>POLICE CHAUKI</td>
+            <td>011 2905 1917</td>
+            <td>DEFENCE COLONY</td>
+          </tr>
+
+          <tr>
+            <th scope="row">55</th>
+            <td>POLICE STATION S. J. ENCLAVE</td>
+            <td>011 2410 6345</td>
+            <td>S. J. ENCLAVE</td>
+          </tr>
+
+          <tr>
+            <th scope="row">56</th>
+            <td>POLICE STATION NARAINA</td>
+            <td>011 2589 1181</td>
+            <td> - </td>
+          </tr>
+
+          <tr>
+            <th scope="row">57</th>
+            <td>POLICE STATION PUNJABI BAUG</td>
+            <td>011 2522 4162</td>
+            <td>PUNJABI BAUG</td>
+          </tr>
+
+          <tr>
+            <th scope="row">58</th>
+            <td>POLICE STATION CHANAKYAPURI</td>
+            <td>011 2301 2003</td>
+            <td>CHANAKYAPURI</td>
+          </tr>
+
+          <tr>
+            <th scope="row">59</th>
+            <td>POLICE BOOTH KALKAJI</td>
+            <td>011 2643 9165</td>
+            <td> KALKAJI</td>
+          </tr>
+
+          <tr>
+            <th scope="row">60</th>
+            <td>POLICE STATION TILAK MARG</td>
+            <td>011  2338 2100</td>
+            <td>TILAK MARG</td>
+          </tr>
+
+          <tr>
+            <th scope="row">61</th>
+            <td>POLICE STATION BADARPUR</td>
+            <td>011 2989 4754</td>
+            <td>BADARPUR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">62</th>
+            <td>POLICE STATION Madanpur Khadar Village, Sarita Vihar</td>
+            <td>011 2682 5534</td>
+            <td>KHADAR VILLAGE, SARITA VIHAR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">63</th>
+            <td>POLICE STATION SUNLIGHT COLONY</td>
+            <td>011 2634 7482</td>
+            <td>SUNLIGHT COLONY</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">64</th>
+            <td>POLICE STATION INDERPURI</td>
+            <td>011 2583 2202</td>
+            <td>INDERPURI</td>
+          </tr>
+
+          <tr>
+            <th scope="row">65</th>
+            <td>POLICE STATION PREET VIHAR</td>
+            <td>011 2250 9966</td>
+            <td>DEFENCE COLONY</td>
+          </tr>
+
+          <tr>
+            <th scope="row">66</th>
+            <td>POLICE STATION MAYAPURI</td>
+            <td>011 2811 7644</td>
+            <td>MAYAPURI</td>
+          </tr>
+
+          <tr>
+            <th scope="row">67</th>
+            <td>POLICE STATION ALIPUR</td>
+            <td>011 2720 2265</td>
+            <td>ALIPUR, DELHI</td>
+          </tr>
+
+          <tr>
+            <th scope="row">68</th>
+            <td>POLICE STATION MODEL TOWN </td>
+            <td> 011 2745 6072</td>
+            <td>MODEL TOWN </td>
+          </tr>
+
+          <tr>
+            <th scope="row">69</th>
+            <td>POLICE STATION MAURICE NAGAR</td>
+            <td>011 2766 7178</td>
+            <td>MAURICE NAGAR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">70</th>
+            <td>POLICE STATION CHANDNI MAHAL</td>
+            <td>011 2327 1751</td>
+            <td>CHANDNI MAHAL</td>
+          </tr>
+
+          <tr>
+            <th scope="row">71</th>
+            <td>POLICE STATION RANI BAUG</td>
+            <td>011 2701 5329</td>
+            <td>RANI BAUG</td>
+          </tr>
+
+          <tr>
+            <th scope="row">72</th>
+            <td>POLICE STATION DARYAGANJ</td>
+            <td>011 2326 3240</td>
+            <td>DARYAGANJ</td>
+          </tr>
+
+          <tr>
+            <th scope="row">73</th>
+            <td>POLICE STATION CHITTARANJAN</td>
+            <td>077278 98888</td>
+            <td>CHITTARANJAN</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">74</th>
+            <td>POLICE STATION CHHAWLA</td>
+            <td>011 2531 6300</td>
+            <td>CHHAWLA</td>
+          </tr>
+
+          <tr>
+            <th scope="row">75</th>
+            <td>POLICE STATION SUBHASH PLACE</td>
+            <td>011 2735 6336</td>
+            <td>SUBHASH PLACE</td>
+          </tr>
+
+          <tr>
+            <th scope="row">76</th>
+            <td>POLICE STATION KALKAJI</td>
+            <td>011 2643 0607</td>
+            <td>KALKAJI</td>
+          </tr>
+
+          <tr>
+            <th scope="row">77</th>
+            <td>POLICE BOOTH - KAILASH COLONY MARKET</td>
+            <td>011 2923 5815</td>
+            <td>KAILASH COLONY MARKET</td>
+          </tr>
+
+          <tr>
+            <th scope="row">78</th>
+            <td>POLICE STATION NAJAFGARH</td>
+            <td>011 2501 6200</td>
+            <td>NAJAFGARH</td>
+          </tr>
+
+          <tr>
+            <th scope="row">79</th>
+            <td>DELHI TRAFFIC POLICE BOOTH</td>
+            <td>011 2584 4444</td>
+            <td> - </td>
+          </tr>
+
+          <tr>
+            <th scope="row">80</th>
+            <td>POLICE STATION ASHOK VIHAR</td>
+            <td>011 2724 3066</td>
+            <td>ASHOK VIHAR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">81</th>
+            <td>POLICE STATION SOUTH AVENUE</td>
+            <td>011 2301 3336</td>
+            <td>SOUTH AVENUE</td>
+          </tr>
+
+          <tr>
+            <th scope="row">82</th>
+            <td>POLICE STATION NEW ASHOK NAGAR</td>
+            <td>011 2261 0954</td>
+            <td>NEW ASHOK NAGAR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">83</th>
+            <td>POLICE STATION PITAMPURA</td>
+            <td>011 2732 2353</td>
+            <td>PITAMPURA</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">84</th>
+            <td>POLICE STATION OKHLA INDUSTRIAL AREA</td>
+            <td>011 2681 6677</td>
+            <td>OKHLA INDUSTRIAL AREA</td>
+          </tr>
+
+          <tr>
+            <th scope="row">85</th>
+            <td>POLICE STATION DAABRI</td>
+            <td>087508 71005</td>
+            <td>DAABRI</td>
+          </tr>
+
+          <tr>
+            <th scope="row">86</th>
+            <td>POLICE STATION TIMARPUR</td>
+            <td>011 2381 2734</td>
+            <td>TIMARPUR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">87</th>
+            <td>POLICE STATION KALYAN PURI</td>
+            <td>011 2277 2287</td>
+            <td>KALYAN PURI</td>
+          </tr>
+
+          <tr>
+            <th scope="row">88</th>
+            <td>POLICE STATION SEEMA PURI</td>
+            <td>011 2259 9394</td>
+            <td>SEEMA PURI</td>
+          </tr>
+
+          <tr>
+            <th scope="row">89</th>
+            <td>POLICE STATION JYOTI NAGAR</td>
+            <td>011 2281 0524</td>
+            <td>JYOTI NAGAR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">90</th>
+            <td>POLICE STATION MANSAROVAR PARK</td>
+            <td>011 2259 9374</td>
+            <td>MANSAROVAR PARK</td>
+          </tr>
+
+          <tr>
+            <th scope="row">91</th>
+            <td>POLICE STATION - CRIME BRANCH</td>
+            <td>011 2381 2923</td>
+            <td> - </td>
+          </tr>
+
+          <tr>
+            <th scope="row">92</th>
+            <td>POLICE STATION SARAI ROHILA</td>
+            <td>011 2369 1106</td>
+            <td>SARAI ROHILA</td>
+          </tr>
+
+          <tr>
+            <th scope="row">93</th>
+            <td>POLICE STATION VIVEK VIHAR</td>
+            <td>011 2214 6040</td>
+            <td>VIVEK VIHAR</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">94</th>
+            <td>POLICE STATION DLF SEC-29</td>
+            <td>012 239 6700</td>
+            <td>DLF SEC-29</td>
+          </tr>
+
+          <tr>
+            <th scope="row">95</th>
+            <td>POLICE STATION PRASHANT VIHAR</td>
+            <td>011 2755 0522</td>
+            <td>PRASHANT VIHAR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">96</th>
+            <td>POLICE STATION LAHORI GATE</td>
+            <td>011 2395 3776</td>
+            <td>LAHORI GATE</td>
+          </tr>
+
+          <tr>
+            <th scope="row">97</th>
+            <td>POLICE STATION PASCHIM VIHAR</td>
+            <td>011 2526 7286</td>
+            <td>PASCHIM VIHAR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">98</th>
+            <td>POLICE STATION BHALSWA DAIRY</td>
+            <td>011 2781 1933</td>
+            <td>BHALSWA DAIRY</td>
+          </tr>
+
+          <tr>
+            <th scope="row">99</th>
+            <td>POLICE STATION LODHI COLONY</td>
+            <td>011 2462 0283</td>
+            <td>LODHI COLONY</td>
+          </tr>
+
+          <tr>
+            <th scope="row">100</th>
+            <td>POLICE STATION HAZARAT NIZAMUDDIN </td>
+            <td>011 2435 9989</td>
+            <td>HAZARAT NIZAMUDDIN RD.</td>
+          </tr>
+
+          <tr>
+            <th scope="row">101</th>
+            <td>POLICE STATION THANA SADAR BAZAAR</td>
+            <td>011 2351 2411</td>
+            <td>IDGAH RD</td>
+          </tr>
+
+          <tr>
+            <th scope="row">102</th>
+            <td>POLICE STATION KESHAV PURAM</td>
+            <td>011 2718 1325</td>
+            <td>KESHAV PURAM</td>
+          </tr>
+
+          <tr>
+            <th scope="row">103</th>
+            <td>POLICE STATION SHRINIWAS </td>
+            <td>011 2684 1500</td>
+            <td>SHRINIWAS </td>
+          </tr>
+
+          <tr>
+            <th scope="row">104</th>
+            <td>POLICE STATION KHAJURI KHAS</td>
+            <td>011 2296 0459</td>
+            <td>KHAJURI KHAS</td>
+          </tr>
+
+          <tr>
+            <th scope="row">105</th>
+            <td>POLICE STATION SAMAYPUR BADLI</td>
+            <td>011 2785 4799</td>
+            <td>SAMAYPURI BADLI</td>
+          </tr>
+
+          <tr>
+            <th scope="row">106</th>
+            <td>POLICE STATION NAND NAGRI </td>
+            <td>011 2258 3307</td>
+            <td>NAND NAGRI </td>
+          </tr>
+
+          <tr>
+            <th scope="row">107</th>
+            <td>POLICE STATION NABI KARIM </td>
+            <td>011 2352 1081</td>
+            <td>NABI KARIM</td>
+          </tr>
+
+          <tr>
+            <th scope="row">108</th>
+            <td>POLICE STATION GOKAL PURI</td>
+            <td>011 2281 0485</td>
+            <td>GOKAL PURI</td>
+          </tr>
+
+          <tr>
+            <th scope="row">109</th>
+            <td>POLICE STATION SECTOR-20</td>
+            <td>094104 51003</td>
+            <td>-</td>
+          </tr>
+
+          <tr>
+            <th scope="row">110</th>
+            <td>POLICE STATION LAJPAT NAGAR</td>
+            <td>011 2983 2456</td>
+            <td>LAJPAT NAGAR</td>
+          </tr>
+
+          <tr>
+            <th scope="row">111</th>
+            <td>POLICE STATION KUNDLI SONIPAT</td>
+            <td>0130 237 1131</td>
+            <td>KUNDLI SONIPAT</td>
+          </tr>
+
+          <tr>
+            <th scope="row">112</th>
+            <td>POLICE STATION JAGATPURI</td>
+            <td>112242362</td>
+            <td>JAGATPURI</td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#table-for-school').DataTable();
+      $('.dataTables_length').addClass('bs-select');
+    });
+  </script>
+
+
+</body>
+
+</html>          

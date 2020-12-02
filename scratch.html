@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Playfair Display CDN-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&display=swap"
+    rel="stylesheet">
+
+
+  <!--Font Awesome CDN-->
+  <script src="https://kit.fontawesome.com/1ffda5c6a4.js" crossorigin="anonymous"></script>
+  <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" rel="stylesheet">
+  <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" rel="stylesheet">
+  <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" rel="stylesheet">
+
+  <!--Google Icons CDN-->
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!--Bootstrap 5 CDN-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <!--NAVBAR-->
+  <section id="navBar">
+    <nav class="navbar sticky-top navbar-light py-3 navbar-expand-lg navigation">
+      <div class="logo">
+        <img src="http://www.sapne.org.in/img/logo.gif" alt="no img">
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks">
+        <div class="navbar-toggler-icon"></div>
+      </button>
+      <div id="navbarLinks" class="collapse navbar-collapse menu-list v-class-resp">
+        <!--NavBar Set-->
+        <ul class="navbar-nav text-formatting">
+          <!--HOME-->
+          <li class="nav-item active px-2 ">
+            <a href="#" class="nav-item"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <!--END OF HOME-->
+
+          <!--ABOUT US-->
+          <li class="nav-item dropdown px-2 ">
+            <a class="nav-link dropdown-toggle  nav" href="#" id="navbarDropdownMenuLink1" role="button"
+              data-toggle="dropdown" aria-expanded="false"><i class="fa fa-info-circle"
+                aria-hidden="true"></i> About US
+            </a>
+            <ul class="dropdown-menu dropdown-content">
+              <li><a class="dropdown-item text-formatting" href="#whoweare">Who We Are</a></li>
+              <li><a class="dropdown-item text-formatting" href="#vision">Vision</a></li>
+              <li><a class="dropdown-item text-formatting" href="#mission">Mission</a></li>
+            </ul>
+          </li>
+          <!--END OF ABOUT US-->
+
+          <!--OUR IMPACT-->
+          <li class="nav-item dropdown px-2">
+            <a class="nav-link dropdown-toggle  nav" href="#" id="navbarDropdownMenuLink2" role="button"
+              data-toggle="dropdown" aria-expanded="false"> <i class="fas fa-heart"></i> Our Impact
+            </a>
+            <ul class="dropdown-menu dropdown-content">
+              <li><a class="dropdown-item text-formatting" href="#">Child Education</a></li>
+              <li><a class="dropdown-item text-formatting" href="#">Environment</a></li>
+              <li><a class="dropdown-item text-formatting" href="#">health</a></li>
+              <li><a class="dropdown-item text-formatting" href="#">Sanitation</a></li>
+              <li><a class="dropdown-item text-formatting" href="#">Livelihood</a></li>
+              <li><a class="dropdown-item text-formatting" href="#">Divyang</a></li>
+              <li><a class="dropdown-item text-formatting" href="#">Employment</a></li>
+            </ul>
+          </li>
+          <!--END OF OUR IMPACT-->
+
+          <!--PROJECTS-->
+          <li class="nav-item dropdown px-2">
+            <a class="nav-link dropdown-toggle  nav" href="#" id="navbarDropdownMenuLink3" role="button"
+              data-toggle="dropdown" aria-expanded="false"><i class="fas fa-tasks"></i> Projects
+            </a>
+            <ul class="dropdown-menu dropdown-content">
+              <li><a class="dropdown-item text-formatting" href="#">Sapne Ki Pathshaala</a></li>
+              <li><a class="dropdown-item text-formatting" href="#">Shakti</a></li>
+              <li><a class="dropdown-item text-formatting" href="#">Draw your Dream</a></li>
+            </ul>
+          </li>
+          <!--END OF PROJECTS-->
+
+          <!--PHONEBOOK-->
+          <li class="nav-item dropdown px-2">
+            <a class="nav-link dropdown-toggle  nav" href="#" id="navbarDropdownMenuLink4" role="button"
+              data-toggle="dropdown" aria-expanded="false"><i class="fa fa-phone" aria-hidden="true"></i> Phonebook
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="./HELPLINES.html" class="dropdown-item text-formatting">Helpline Numbers</a></li>
+              <li><a href="./Hospital_government.html" class="dropdown-item text-formatting">Hospitals</a></li>
+              <li><a href="./Schools In Delhi.html" class="dropdown-item text-formatting">Schools</a></li>
+              <li><a href="#" class="dropdown-item text-formatting">Colleges</a></li>
+              <li><a href="./pol-phone.html" class="dropdown-item text-formatting">Police Stations</a></li>
+
+            </ul>
+          </li>
+          <!--END OF PHONEBOOK-->
+
+          <!--BLESSINGS BY VIP-->
+          <li class="nav-item px-2">
+            <a href="#"><i class="far fa-handshake"></i> Blessings by VIP</a>
+          </li>
+          <!--END OF BLESSINGS BY VIP-->
+
+          <!--JOIN US-->
+          <li class="nav-item px-2">
+            <a href="#"><i class="fas fa-users"></i> Join Us</a>
+          </li>
+          <!--END OF JOIN US-->
+
+          <!--SAPNE STORE-->
+          <li class="nav-item px-2">
+            <a href="#" class="text-capitalize"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Sapne Store</a>
+          </li>
+          <!--END OF SAPNE STORE-->
+      </div>
+      </ul>
+    </nav>
+  </section>
+  <!--END OF NAVBAR-->
+
+
+  <!-- CAROUSEL SECTION -->
+  <section id="carousel-section">
+    <div class="image-slider">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+            <div class="view">
+              <img src="Img/Carousel1.jpg" class="d-block w-100" alt="...">
+              <div class="mask rgba-black-slight"></div>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+
+              <p>You are either supporting the vision or supporting division.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="view">
+              <img src="./Img/Carousel3.jpg" class="d-block w-100" alt="...">
+              <div class="mask rgba-black-slight"></div>
+            </div>
+
+            <div class="carousel-caption d-none d-md-block">
+
+              <p>Great minds think alike</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+
+            <div class="view">
+              <img src="./Img/Carousel4.jpg" class="d-block w-100" alt="...">
+              <div class="mask rgba-black-slight"></div>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+
+              <p>Sapne Ki
+                Paathshala,
+                Masti ki Paathshala</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="view">
+              <img src="./Img/Carousel5.jpg" class="d-block w-100" alt="...">
+              <div class="mask rgba-black-slight"></div>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+
+              <p>Draw your dream Give them their magic wands, they'll show you wonders</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="view">
+              <img src="./Img/carousel6.jfif" class="d-block w-100" alt="...">
+              <div class="mask rgba-black-slight"></div>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Decorate A Life</h5>
+              <p> A clean place is a safe place radiating only positivity</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="view">
+              <img src="./Img/fp-1.jpg" class="d-block w-100" alt="...">
+              <div class="mask rgba-black-slight"></div>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Shakti</h5>
+              <p> There is no limit to what a woman can accomplish</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!--END OF CAROUSEL SECTION-->
+
+  <!-- SIDE DONATE BUTTON -->
+  <section id="donate-button-section">
+    <a href="#" id="donate" class="btn p-4 mr-auto style-donate">
+      <span style="font-size:20px;color: white;padding-top: 10px;padding-bottom: 10px;">Donate Us</span>
+    </a>
+  </section>
+  <!--END OF DONATE BUTTON-->
+
+  <!--MARQUEE-->
+  <section id="marquee-section">
+    <marquee id="marquee" onmouseover="this.stop();" onmouseout="this.start();" class="mb-4">
+      <a href="../DrawYour.html" class="mx-4 text-formatting text-white">Draw Your Dream Final Result</a>
+      <a href="./Hospital_government.html" class="mx-4 text-formatting text-white">Hospitals Delhi</a>
+      <a href="./Schools In Delhi.html" class="mx-4 text-formatting text-white">Schools and Colleges</a>
+      <a href="./womenHelp.html" class="mx-4 text-formatting text-white">Women Helpline</a>
+      <a href="#" class="mx-4 text-formatting text-white">Government Schemes</a>
+      <a href="#" class="mx-4 text-formatting text-white">Register for MSME</a>
+      <a href="#" class="mx-4 text-formatting text-white">Search NGO</a>
+      <a href="#" class="mx-4 text-formatting text-white">Apply For Ration-Card</a>
+      <a href="#" class="mx-4 text-formatting text-white">COVID19 Statistics</a>
+    </marquee>
+  </section>
+  <!--END OF MARQUEE-->
+
+  <!--ABOUT US SECTION-->
+  <section id="about">
+    <p class="parahead container-fluid py-1">
+      <i class="fa fa-info-circle text-white" aria-hidden="true"></i>
+        About Us
+    </p>
+
+    <!--WHO WE ARE-->
+    <div id="whoweare" class="float-right ml-5">
+      <p class="h4 abt-us1 text-capitalize">
+        who we are
+      </p>
+
+      <div class="frow">
+        <div class="col-sm-12 col-md-4 col-lg-5" data-aos="fade-right">
+          <img src="./Img/pexels-pixabay-355952.jpg" height="90%" width="90%">
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <p class="normal-text1 mr-1 ml-5 clear-both text-right" data-aos="fade-left">
+            We're a group of young, dynamic, and enthusiastic individuals from various walks of life, fed up with
+            witnessing the unfulfilled dreams due to lack of education. With the sole purpose of improving human life
+            and its quality, this not-for-profit organization was founded on January 15th, 2016, and is registered under
+            Trust Act 1956. We are a nationalized NGO where our goal is to bring change in India. 
+            At Sapne, you'll find that your work will directly benefit the children in need of education. We have also
+            hosted several events in the presence of prominent political figures in India. As a great foundation, we
+            strive to ignite the light of hope in the eyes of the little underprivileged children who deserve the
+            opportunity to rise to their fullest. Sapne has launched many campaigns and events to achieve this and
+            continues to do so each passing day.
+          </p>
+        </div>
+
+      </div>
+      <div class="title-underline"></div>
+    </div>
+    <!--END OF WHO WE ARE-->
+
+    <!--OUR VISION-->
+    <div id="vision">
+      <div class="heading3">
+        <p class="h4 abt-us mr-5 text-capitalize">
+          our vision
+        </p>
+
+      </div>
+      <div class="frow">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <p class="normal-text mx-3 text-left" data-aos="fade-right">
+            There are about 2 million NGOs in India but are they all achieving what they dreamt of? Each one of us at
+            Sapne has a passion for our beliefs and this is what fuels us every today and days to come, working for the
+            betterment of society and we grow one step closer to accomplishing our goals each day. We at Sapne not only
+            help people but also form a loving bond with them such that they become a part of the Sapne family. We
+            understand that not everybody is lucky enough to afford a good education and lifestyle and we tend to be a
+            helping hand to these people. 
+
+          </p>
+        </div>
+        <div class="img-side col-sm-12 col-md-4 col-lg-5" data-aos="fade-left">
+          <img src="./Img/pexels-pixabay-276259.jpg" height="100%" width="100%">
+        </div>
+      </div>
+    </div>
+    <div class="title-underline"></div>
+    <!--END OF OUR VISION-->
+
+    <!--OUR MISSION-->
+    <div id="mission" class="float-right m-3">
+      <p class="h4 abt-us1 text-capitalize">
+        our mission
+      </p>
+
+      <div class="frow">
+        <div class="img-side m-2 col-sm-12 col-md-4 col-lg-5" data-aos="fade-right">
+          <img src="./Img/pexels-juan-pablo-serrano-arenas-1250452.jpg" height="100%" width="100%">
+        </div>
+        <div class="m-3 col-sm-12 col-md-8 col-lg-6">
+          <p class="normal-text1 m-3 ml-5" data-aos="fade-left">
+            Sapne foundation aims to educate young minds, who have the potential of achieving the greatest things, and
+            attempt to show these tiny tots that the world is still kind and there are people out there who are willing
+            to show that humankind is still sensitive, responsible, and generous for those whom they might never cross
+            paths with again. Sapne has taken an initiative to empower women who need support to achieve bigger things
+            in life. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--END OF OUR MISSION-->
+  </section>
+  <!--END OF ABOUT US-->
+
+
+  <!--FEATURED EVENTS-->
+  <section id="featured-events" class="fcontent">
+    <p class="parahead container-fluid py-1">
+      <i class="far fa-calendar-check"></i>
+        FEATURED EVENTS
+    </p>
+
+    <!--AAYAM-->
+    <div class="row row-style">
+      <div id="aayam" class="col-md-4 col-sm-8 py-1" data-aos="fade-right">
+        <div class="innovation-text-cont justify-content-center align-item-center"
+          style="animation-duration: 1.2s;">
+          <div class="card boxshadow">
+            <div class="text-center heading-style p-2 text-uppercase">Aayaam
+            </div>
+            <img class="card-img-top" height="200px" src="./Img/aayam.jpeg" alt="Aayam Poster">
+            <div class="card-body">
+              <div class="innovation-text mt-2">
+                "Creativity does not wait for the perfect moment!” We are thrilled to showcase your artistic gifts and
+                techniques. Before we can do that make sure to have a thorough look at our given brochure. Here is a
+                great platform to showcase your talents. Never wait to display your creative skills and ideas to the
+                entire world. When you get the right platform, don't miss it.
+              </div>
+              <div class="d-flex justify-content-center">
+                <a href="https://www.facebook.com/1390554737918901/posts/2285867845054248/?app=fbl" class="more"
+                  style="text-decoration: none;">Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END OF AAYAM-->
+
+      <!--DRAW YOUR DREAM-->
+      <div id="drawyoudream" class="col-md-4 col-sm-8 pb-3 " data-aos="fade-down">
+        <div class="innovation-text-cont justify-content-center align-item-center"
+          style="animation-duration: 1.2s;">
+          <div class="card boxshadow">
+            <div class="text-center heading-style p-2 text-uppercase">Draw your dream
+            </div>
+            <img class="card-img-top" height="200px" src="./Img/paintingcompetion.jpeg" alt="Painting Competition">
+            <div class="card-body">
+
+              <div class="innovation-text mt-2">
+                Everyone has a dream. Still, the children's dreams are pretty unique and wonderful. Through our Draw
+                your dream project, we are showcasing children's talents to the world. If your child has creative
+                ability and artistic skills, then it's an opportunity for your kid to showcase his/her talent. Yes!
+                SAPNE has started all India drawing competition 'Draw your dream' all over Delhi.
+              </div>
+              <div class="d-flex justify-content-center">
+                <a href="http://sapne.org.in/dyd_res.php" class="more" style="text-decoration: none;">Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END OF DRAW YOUR DREAM-->
+
+      <!--FOOD FOR ALL-->
+      <div id="foodforall" class="col-md-4 col-sm-8 pb-5" data-aos="fade-left">
+        <div class="innovation-text-cont justify-content-center align-item-center"
+          style="animation-duration: 1.2s;">
+          <div class="card boxshadow">
+            <div class="text-center heading-style p-2 text-uppercase">Food for All-Liberate children from hunger
+            </div>
+            <img class="card-img-top" height="200px" src="./Img/foodforall.jpg" alt="Feeding Kids">
+            <div class="card-body">
+
+              <div class="innovation-text mt-2">
+                In a humanitarian gesture to support the needy, SAPNE NGO has taken an initiative to feed the empty
+                stomach of underprivileged kids with two meals in a day. Let us make sure that not even a single child
+                sleeps with an empty stomach. Knowing that it is our sole responsibility to ensure it, we at Sapne
+                organization strive hard to feed the needy. FEED THE NEEDY, SHARE HUMANITY!
+              </div>
+              <div class="d-flex justify-content-center">
+                <a href="https://www.facebook.com/photo?fbid=2271894503118249&amp;set=a.2002334863407549" class="more"
+                  style="text-decoration: none;">Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END OF FOOD FOR ALL-->
+    </div>
+  </section>
+  <!--END OF FEATURED EVENTS-->
+
+  <!-- VOLUNTEER'S SPEAK-->
+  <section id="volunteerspeak" class="fcontent">
+    <p class="parahead container-fluid py-1">
+      <i class="fas fa-volume-up"></i>
+        VOLUNTEERS' SPEAK
+    </p>
+    <div id="carouselExampleIndicators" class="carousel slide outer_design" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+        </ol>
+        <div class="carousel-inner inner_design">
+          <div class="carousel-item active" style="background-color: #e67e22;">
+            <div class="img-styling">
+                <img src="./Img/samir.jpg" class="img-vol-speak" style="height: 150px; width: 150px;">
+            </div>
+            <h3> <b> Samir Kumar </b> </h3>
+            <h6 class="text-center"> (BTech, Indian Institute of Information Technology, Bhagalpur Web Development Head at Sapne) </h6>
+            <p class="text-center p-vol" data-aos="zoom-in">
+            Working with Sapne is a real-time experience. It is helping us to recognize our talents, knowledge, and abilities and put them into action. This opportunity is providing me exposure to different aspects and challenges of the field, and is encouraging me to learn new skills and enhance the existing ones. The highlight of this experience for me is to be able to work with new developers who are inquisitive. We started working on our new website last year, and the rank of our website is improving worldwide, day by day. Our team is working tirelessly, and we are fully committed to implementing good initiatives. 
+            </p>
+          </div>
+          <div class="carousel-item" style="background-color: #e67e22;">
+            <div class="img-styling">
+                <img src="./Img/bhavya.jpg" class="img-vol-speak" style="height: 150px; width: 150px;">
+            </div>
+            <h3> <b> Bhavya Middha </b> </h3>
+            <h6 class="text-center"> (BSc Computer Science, Hans Raj Mahila Maha Vidyalaya, Jalandhar Draw Your Dream, Project Head) </h6>
+            <p class="text-center p-vol w3-animate-zoom" style="animation-duration: 1.2s;" data-aos="zoom-in">
+                My experience so far with Sapne has been good. It is a delight to be part of a team full of enthusiastic youngsters, aiming to upgrade their skills and serve the society. I believe, social service doesn't need riches, we can start with whatever we have and rise from within. Chairman of SAPNE and Navneet Sir have been guiding us well. Both are very supportive and motivating. The entire team is cooperative and inspiring. Teamwork is the heart of great achievements, and I am excited to be a part of the future endeavors of TEAM SAPNE. <br><br>
+            </p>
+          </div>
+          <div class="carousel-item" style="background-color: #e67e22;">
+            <div class="img-styling">
+                <img src="./Img/rachel1.jpg" class="img-vol-speak" style="height: 150px; width: 150px;">
+            </div>
+            <h3> <b> Rachel Ramesh </b> </h3>
+            <h6 class="text-center"> (BBA, NMIMS Graphic Designing Head) </h6>
+            <p class="text-center p-vol w3-animate-zoom" style="animation-duration: 1.2s;" data-aos="zoom-in">
+                I’ve been working with Sapne for a few days now, and it’s honestly been a great experience so far.I love working with new people, and it’s been a good opportunity to meet so many of them. My colleagues are understanding and wonderful to work with. The fact that we’re working for a good cause fuels me up. It has been a joy working with Sapne, and I’d surely recommend this place to anyone looking forward to help the needy or work for a good cause. <br><br>
+            </p>
+          </div>
+          <div class="carousel-item" style="background-color: #e67e22;">
+            <div class="img-styling">
+                <img src="./Img/anjali.jpg" class="img-vol-speak" style="height: 150px; width: 150px;">
+            </div>
+            <h3> <b> Anjali Mangla </b> </h3>
+            <h6 class="text-center"> (BSc(H) chemistry from Hansraj college, Delhi University Content development head at Sapne) </h6>
+            <p class="text-center p-vol w3-animate-zoom" style="animation-duration: 1.2s;" data-aos="zoom-in">
+                In my journey till now with Sapne, I have learned to manage things efficiently while working with a team of talented and hard-working individuals.This internship is helping me gain new experiences and a better insight into my skills and abilities and develop more such skills.I feel obliged to be a part of an organization that is working for a noble cause and has extended the helping hand to needy in these times of crisis. I thank my mentors and look forward to more learning. <br><br>
+            </p>
+          </div>
+          <div class="carousel-item" style="background-color: #e67e22;">
+            <div class="img-styling">
+                <img src="./Img/srishti.jpg" class="img-vol-speak" style="height: 150px; width: 150px;">
+            </div>
+            <h3> <b> Srishti Puri </b> </h3>
+            <h6 class="text-center"> (PGDM, BIMTECH Social Media Marketing Head at Sapne) </h6>
+            <p class="text-center p-vol w3-animate-zoom" style="animation-duration: 1.2s;" data-aos="zoom-in">
+                Each day here has helped me be more productive, and working with an NGO has helped me develop empathy within myself. Chairman of SAPNE, has always supported me, I'm grateful to him.All my teammates are optimistic and hard-working and prove to be a perfect team. The thing I like best here is the trust endowed upon us by our seniors, we have been given the freedom to make the required decisions. <br><br><br>
+            </p>
+          </div>
+          <div class="carousel-item" style="background-color: #e67e22;">
+            <div class="img-styling">
+                <img src="./Img/shreyam.jpg" class="img-vol-speak" style="height: 150px; width: 150px;">
+            </div>
+            <h3> <b> Shreyam Dey </b> </h3>
+            <h6 class="text-center"> (BBA, Narsee Monjee Institute of Management Studies Project Head of Aayaam, the online event of Sapne) </h6>
+            <p class="text-center p-vol w3-animate-zoom" style="animation-duration: 1.2s;" data-aos="zoom-in">
+                I have been working with Sapne for about 15 days and I feel motivated to be my best self every day. My mentor, Chairman of SAPNE, has consistently guided and motivated me. With each passing day at Sapne, I gain a better insight on how to lead a team. This internship is an opportunity for me to exhibit my skills and abilities and put them to test. My colleagues are efficient and their dedication continues to inspire me. I am delighted to work with a team full of innovative and creative individuals. <br><br>
+            </p>
+          </div>
+          <div class="carousel-item" style="background-color: #e67e22;">
+            <div class="img-styling">
+                <img src="./Img/muskan.jpg" class="img-vol-speak" style="height: 150px; width: 150px;">
+            </div>
+            <h3> <b> Muskan Sharma </b> </h3>
+            <h6 class="text-center"> (BSc(Home Science) Graduate, Banasthali Vidyapith, Jaipur HR Head Executive at Sapne) </h6>
+            <p class="text-center p-vol w3-animate-zoom" style="animation-duration: 1.2s;" data-aos="zoom-in">
+                Sapne is trying its best to make life easy for the less privileged. They are trying to provide them the required support.  I am proud to be associated with an organization that is helping underprivileged children and encouraging them to dream bigger. My team is full of competent and hard-working people who inspire me every day. This opportunity is helping me work on my skills to be better in this field. Sapne has made me more empathetic and sensitive towards the society, and I'm highly grateful. <br><br>
+          </p>
+          </div>
+          <div class="carousel-item" style="background-color: #e67e22;">
+            <div class="img-styling">
+                <img src="./Img/kashish.jpg" class="img-vol-speak" style="height: 150px; width: 150px;">
+            </div>
+            <h3> <b> Kashish Chauhan </b> </h3>
+            <h6 class="text-center"> (BA Journalism and Mass Communication, IMC & MT(Kurukshetra University)Head of Journalism and Marketing  at Sapne) </h6>
+            <p class="text-center p-vol w3-animate-zoom" style="animation-duration: 2s;" data-aos="zoom-in">
+                I am delighted to be a part of this team and the kind of work they’re doing. I feel immensely proud to be associated with Sapne. All the team members are cooperative and always there to support and guide. Everyone is treated with due respect and kindness, which is a rare sight.Being a part of this team is helping me develop new skills and polish the existing ones. This in turn would be useful for me to make a mark in this field in the future. This opportunity is giving me the necessary first-hand experience and exposure to different aspects of journalism and marketing.This internship is helping me in my professional as well as personal growth.
+          </p>
+          </div>
+          <div class="carousel-item" style="background-color: #e67e22;">
+            <div class="img-styling">
+                <img src="./Img/navneet.jpeg" class="img-vol-speak" style="height: 150px; width: 150px;">
+            </div>
+            <h3> <b> Navneet Bhushan </b> </h3>
+            <h6 class="text-center"> (BBA, Lovely Professional University, HR Head at Sapne) </h6>
+            <p class="text-center p-vol w3-animate-zoom" style="animation-duration: 1.2s;" data-aos="zoom-in">
+                I am still new to sapne family but it has so much warmth to offer which makes it very comfortable and safe working environment. It's a team of empathetic & creative inviduals. My purpose of joining was to contribute my bit towards the cause sapne working for. <br><br><br><br>
+          </p>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+  </section>    
+      <!--END OF VOLUNTEER'S SPEAK-->
+
+  <!--SAPNE-IAN OF THE MONTH SECTION-->
+  <section id="sapneian" class="fcontent">
+    <p class="parahead container-fluid py-1">
+      <i class="fas fa-trophy"></i>
+      SAPNE-IAN OF THE MONTH
+    </p>
+    <div class="row row-style">
+      <div class="col-md-4 pb-3" data-aos="fade-right">
+        <div class="innovation-text-cont justify-content-center align-item-center">
+          <div class="card boxshadow">
+            <div class="text-center heading-style p-2">SRISHTI PURI
+              <h6> Social media marketing head</h6>
+            </div>
+            <div style="display:table-cell; vertical-align:middle; text-align:center">
+              <img class="card-img-top img-sapnenian" height="200px" src="./Img/srishti.jpg" alt="SRISHTI">
+            </div>
+            <div class="card-body">
+              <div class="innovation-text-2 mt-2">
+                "I am thankful to be part of sapne family. It is the best NGO that one could work for."
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 pb-3" data-aos="fade-down">
+        <div class="innovation-text-cont justify-content-center align-item-center">
+          <div class="card boxshadow">
+            <div class="text-center heading-style p-2">RACHEL RAMESH
+              <h6> Graphic designing head</h6>
+            </div>
+            <div style="display:table-cell; vertical-align:middle; text-align:center">
+              <img class="card-img-top img-sapnenian" height="200px" src="./Img/rachel.jpg" alt="RACHEL">
+            </div>
+            <div class="card-body">
+              <div class="innovation-text-2 mt-2">
+                "Working with Sapne has been a great experience so far.Thank you Sapne for this splendid opportunity!"
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 pb-5" data-aos="fade-left">
+        <div class="innovation-text-cont justify-content-center align-item-center">
+          <div class="card boxshadow">
+            <div class="text-center heading-style p-2">AYESHA MALHOTRA
+              <h6> Content writing intern</h6>
+            </div>
+            <div style="display:table-cell; vertical-align:middle; text-align:center">
+              <img class="card-img-top img-sapnenian" height="200px" src="./Img/ayesha.jpeg" alt="AYESHA">
+            </div>
+            <div class="card-body">
+              <div class="innovation-text-2 mt-2">
+                "I am thankful to be part of sapne family.It is the best ngo that one could work for."
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--END OF SAPNE-IAN OF THE MONTH-->
+
+
+  <!--OUR SPONSORS-->
+  <section id="sponsors" class="text-formatting">
+    <div>
+      <p class="parahead container-fluid px-1">
+        <i class="fas fa-donate text-white"></i>
+        SPONSORS
+      </p>
+    </div>
+    <div class="sponsor-body text-dark text-light">
+      <div class="card sponsors" style="width: 18rem" data-aos="fade-down">
+        <img src="./Img/os-1.png" class="card-img-top" alt="..." />
+        <div class="card-body p-2"></div>
+        <div class="card-footer p-2">
+          <p class="card-text">
+            VIDYA BHARATI SCHOOL
+          </p>
+        </div>
+      </div>
+
+      <div class="card sponsors" style="width: 18rem" data-aos="fade-down">
+        <img src="./Img/os-2.png" class="card-img-top" alt="..." />
+        <div class="card-body p-2"></div>
+        <div class="card-footer p-2">
+          <p class="card-text">
+            K. S. TEXTILES PRIVATE LTD.
+          </p>
+        </div>
+      </div>
+
+      <div class="card sponsors" style="width: 18rem" data-aos="fade-down">
+        <img src="./Img/os-3.png" class="card-img-top" alt="..." />
+        <div class="card-body p-2"></div>
+        <div class="card-footer p-2">
+          <p class="card-text">
+            GROWING STEPS
+          </p>
+        </div>
+      </div>
+
+      <div class="card sponsors" style="width: 18rem" data-aos="fade-down">
+        <img src="./Img/os-4.png" class="card-img-top" alt="..." />
+        <div class="card-body p-2"></div>
+        <div class="card-footer p-2">
+          <p class="card-text">
+            THE CHOCOLATE VILLA
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--END OF SPONSORS-->
+
+
+  <!--FOOTER-->
+  <footer id="footer">
+    <div class="footerbg">
+      <p class="fhead text-capitalize text-center text-white ">
+        contact us
+      <div class="text-underline-2 m-auto "></div>
+      </p>
+      <p class="text-center text-uppercase text-white fsubhead">
+        address
+      </p>
+      <p class="text-center fcontent text-white innovation-text">
+        Sapne NGO
+        G-6/203, Pocket 6, Sector 16, Rohini, New Delhi, Delhi 110085
+      </p>
+      <p class="text-center text-uppercase text-lead text-white fsubhead">
+        mail us
+      </p>
+      <p class="text-center fcontent text-white innovation-text">
+        Sapne NGO
+        info@sapne.org.in
+      </p>
+      <p class="text-center text-uppercase text-white fsubhead">
+        follow us on
+      </p>
+      <div class="iconset text-center mr-5 ml-5  innovation-text">
+        <a href="https://www.facebook.com/Sapnethedreams">
+          <i class="fab fa-2x fa-facebook-square text-white p-3"></i>
+        </a>
+        <a href="https://www.instagram.com/sapnethedreams/">
+          <i class="fab fa-2x fa fa-instagram text-white p-3"></i>
+        </a>
+        <a href="https://twitter.com/Sapne07">
+          <i class="fab fa-2x fa-twitter text-white p-3"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UCZUECOx6Z66xnUjVEi57fSw">
+          <i class="fab fa-2x fa-youtube text-white p-3"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/sapnethedreams/">
+          <i class="fa fa-2x fa-linkedin p-3 text-white" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!--END OF FOOTER-->
+
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!--Popper JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+<script>
+      AOS.init({
+      duration: 1200,
+      })
+</script>
